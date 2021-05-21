@@ -1,0 +1,2 @@
+we create a .environment because of security involving links and that stuff
+since we connected the logger, now whenever it runs it'll show the error.log file
