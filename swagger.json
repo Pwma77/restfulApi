@@ -1,0 +1,39 @@
+{
+    "swagger":"2.0",
+    "info":{
+        "version":"1.0.0",
+        "title":"RESTFUL API DOCUMENTATION - Custom",
+        "description":"Documentation for the restful API project made at class",
+        "license":{
+            "name":"MIT",
+            "url":"https://opensource.org/licenses/MIT"
+        }
+    },
+    "components":{
+        "securitySchemes":{
+            "bearerAuth":{
+                "type":"http",
+                "scheme":"bearer",
+                "bearerFormat":"JWT"
+            }
+        }
+    },
+    "security":{
+        "bearerAuth":[]
+    },
+    "host":"localhost:40000",
+    "basePath":"/api",
+    "paths":{
+        "/hello":{
+            "get":{
+                "parameters":[],
+                "description":"Must return hello",
+                "responses":{
+                    "200":{
+                        "description":"OK"
+                    }
+                }
+            }
+        }
+    }
+}

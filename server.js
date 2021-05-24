@@ -19,10 +19,14 @@ const bcrypt = require('bcrypt');//COMPARES
 //for connecting into different domains
 const cors = require('cors')
 
+const swaggerDocument = require('./swagger.json');//is a json file, not js
 //express and connection
 const app = express();
 const port = 40000;
 app.use(bodyParser.json({limit: '100mb'}));
+
+//to setup swagger
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));//Don't forget to deliver swaggerdoc
 
 app.get('/api/hello', function(req, res){
 

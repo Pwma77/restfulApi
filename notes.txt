@@ -1,2 +1,5 @@
 we create a .environment because of security involving links and that stuff
 since we connected the logger, now whenever it runs it'll show the error.log file
+
+before it was named different (swagger, also it has a lot of documentation)
+MIT free licenses for swagger, do it
